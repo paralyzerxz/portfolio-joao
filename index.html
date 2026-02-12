@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Gabriel | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Portfolio de João Gabriel Silva Aveiro - Desenvolvedor de Sistemas"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="profile-header">
+          <div class="profile-text">
+            <h1 class="fade-in">
+              João Gabriel <span class="highlight">Silva Aveiro</span>
+            </h1>
+            <h2 class="fade-in delay-1">
+              Análise e Desenvolvimento de Sistemas
+            </h2>
+            <p class="fade-in delay-2">
+              Sempre procurando evoluir e aprender coisas novas.
+            </p>
+            <div class="cta-buttons fade-in delay-3">
+              <a href="#sobre" class="btn primary">Sobre mim</a>
+              <a href="#contato" class="btn secondary">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre" class="section">
+        <div class="container">
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-text">
+            Olá! Meu nome é João Gabriel, um estudante de tecnologia e
+            desenvolvimento de software. Eu já possuo o diploma de
+            <strong>Análise e Desenvolvimento de Sistemas</strong>, porém eu estou em busca de
+            oportunidades para aplicar meus conhecimentos e evoluir
+            profissionalmente na área de TI. No momento estou fazendo cursos a parte para aprender mais
+            e enriquecer meu conhecimento sobre área e aprender novas tecnologicas e linguagens.
+          </p>
+        </div>
+      </section>
+
+      <section id="tecnologias" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title">Tecnologias & Habilidades</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="icon">HTML5</div>
+              <h3>HTML</h3>
+              <p>Estruturação semântica e acessível.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon">CSS3</div>
+              <h3>CSS</h3>
+              <p>Estilização responsiva e layouts modernos.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon">JS</div>
+              <h3>JavaScript</h3>
+              <p>Interatividade e lógica client-side.</p>
+            </div>
+            <div class="skill-card">
+              <div class="icon">PY</div>
+              <h3>Python</h3>
+              <p>Automação, scripts e backend.</p>
+            </div>
+            <div class="skill-card" style="border-color: var(--accent);">
+               <div class="icon">EN</div>
+               <h3>Inglês</h3>
+               <p>Fluente (Fala, Escrita e Leitura).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container">
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <div class="contact-grid">
+            <a
+              href="https://www.linkedin.com/in/joão-aveiro-a67342237/"
+              target="_blank"
+              class="contact-item"
+            >
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">Ver Perfil</span>
+            </a>
+            <a
+              href="https://github.com/paralyzerxz"
+              target="_blank"
+              class="contact-item"
+            >
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">paralyzerxz</span>
+            </a>
+            <a href="mailto:joaogabriel.aveiro@gmail.com" class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">joaogabriel.aveiro@gmail.com</span>
+            </a>
+            <a href="tel:+5534984229863" class="contact-item">
+              <span class="contact-label">Telefone</span>
+              <span class="contact-value">(34) 98422-9863</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 João Gabriel Silva Aveiro. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
