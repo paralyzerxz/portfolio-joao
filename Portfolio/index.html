@@ -1,0 +1,819 @@
+<!doctype html>
+
+<html class="dark" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Portfolio de João Gabriel Silva Aveiro - Desenvolvedor de Sistemas"
+    />
+    <title>João Gabriel | Portfólio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-[#020617] font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30 relative"
+  >
+    <!-- Navigation -->
+    <header
+      class="fixed md:static top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-2">
+            <span
+              class="text-xl font-bold tracking-tight text-slate-900 dark:text-white"
+              >João Gabriel</span
+            >
+          </div>
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#"
+              >Início</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#about"
+              >Sobre</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#services"
+              >Serviços</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#work"
+              >Portfólio</a
+            >
+            <a
+              class="text-sm font-medium hover:text-primary transition-colors"
+              href="#contact"
+              >Contato</a
+            >
+          </nav>
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-primary transition-all border border-slate-200 dark:border-slate-700 focus:outline-none flex flex-col items-center justify-center space-y-1.5 w-12 h-12"
+            aria-label="Toggle Menu"
+          >
+            <span
+              class="hamburger-line w-6 h-0.5 bg-current transition-all"
+            ></span>
+            <span
+              class="hamburger-line w-6 h-0.5 bg-current transition-all"
+            ></span>
+            <span
+              class="hamburger-line w-6 h-0.5 bg-current transition-all"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Menu Side Drawer -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-[100] translate-x-full transition-transform duration-500 ease-in-out md:hidden"
+    >
+      <!-- Backdrop Blur -->
+      <div
+        id="menu-backdrop"
+        class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-500"
+      ></div>
+
+      <!-- Drawer Content -->
+      <nav
+        class="absolute top-0 right-0 h-full w-[80%] max-w-sm bg-white/90 dark:bg-[#020617]/90 backdrop-blur-xl border-l border-slate-200 dark:border-slate-800 flex flex-col p-8 pt-24 space-y-6 shadow-2xl"
+      >
+        <a
+          class="text-2xl font-black text-slate-900 dark:text-white hover:text-primary transition-colors mobile-link opacity-0 -translate-x-4"
+          href="#"
+          style="transition-delay: 100ms"
+          >Início</a
+        >
+        <a
+          class="text-2xl font-black text-slate-900 dark:text-white hover:text-primary transition-colors mobile-link opacity-0 -translate-x-4"
+          href="#about"
+          style="transition-delay: 150ms"
+          >Sobre</a
+        >
+        <a
+          class="text-2xl font-black text-slate-900 dark:text-white hover:text-primary transition-colors mobile-link opacity-0 -translate-x-4"
+          href="#services"
+          style="transition-delay: 200ms"
+          >Serviços</a
+        >
+        <a
+          class="text-2xl font-black text-slate-900 dark:text-white hover:text-primary transition-colors mobile-link opacity-0 -translate-x-4"
+          href="#work"
+          style="transition-delay: 250ms"
+          >Portfólio</a
+        >
+        <a
+          class="text-2xl font-black text-slate-900 dark:text-white hover:text-primary transition-colors mobile-link opacity-0 -translate-x-4"
+          href="#contact"
+          style="transition-delay: 300ms"
+          >Contato</a
+        >
+
+        <div
+          class="pt-12 mt-12 border-t border-slate-200 dark:border-slate-800"
+        >
+          <p
+            class="text-xs font-bold text-slate-500 dark:text-slate-500 uppercase tracking-widest mb-4"
+          >
+            Redes Sociais
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/paralyzerxz"
+              target="_blank"
+              class="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-all border border-slate-200 dark:border-slate-700"
+            >
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joão-aveiro-a67342237/"
+              target="_blank"
+              class="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-all border border-slate-200 dark:border-slate-700"
+            >
+              <span class="material-symbols-outlined">link</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="md:pt-0">
+      <!-- Hero Section -->
+      <section
+        class="relative pt-32 pb-16 md:pt-20 lg:pt-32 lg:pb-24 overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+              <h1
+                class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight tracking-tight text-slate-900 dark:text-white mb-6"
+              >
+                João Aveiro <br />
+                <span class="text-primary">Dev Júnior</span>
+              </h1>
+              <p
+                class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-lg leading-relaxed"
+              >
+                Desenvolvedor de Sistemas. Sempre procurando evoluir e aprender
+                coisas novas.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  href="#work"
+                  class="btn-neon px-8 py-4 rounded-lg font-bold text-base transition-all flex items-center gap-2"
+                >
+                  Ver Trabalho
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+                <a
+                  href="#contact"
+                  class="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-900 dark:text-white px-8 py-4 rounded-lg font-bold text-base transition-all inline-block"
+                >
+                  Contato
+                </a>
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="relative group">
+                <div
+                  class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
+                ></div>
+                <div
+                  class="relative bg-slate-100 dark:bg-slate-800 aspect-square overflow-hidden border border-slate-200 dark:border-slate-700 rounded-[2.5rem] profile-photo-container"
+                >
+                  <img
+                    alt="João Aveiro Profile"
+                    class="w-full h-full object-cover transition-all duration-500 hover:scale-105"
+                    src="profile.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tecnologias Section -->
+      <section
+        class="py-12 border-y border-slate-200 dark:border-white/5 bg-slate-100/50 dark:bg-slate-800/30 overflow-hidden reveal"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 marquee-container">
+          <!-- First set of icons -->
+          <div class="marquee-content">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="HTML5"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="CSS3"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="JavaScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Python"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Docker"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Git"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="h-10 w-10 marquee-item dark:invert"
+              alt="GitHub"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="PHP"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+              class="h-10 w-10 marquee-item dark:invert"
+              alt="WordPress"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Java"
+            />
+          </div>
+          <!-- Duplicated set for seamless loop -->
+          <div class="marquee-content" aria-hidden="true">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="HTML5"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="CSS3"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="JavaScript"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Python"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Node.js"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Docker"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Git"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              class="h-10 w-10 marquee-item dark:invert"
+              alt="GitHub"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="PHP"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+              class="h-10 w-10 marquee-item dark:invert"
+              alt="WordPress"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              class="h-10 w-10 marquee-item"
+              alt="Java"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="py-24 reveal" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h2
+              class="text-primary font-bold tracking-widest uppercase text-sm mb-4"
+            >
+              Sobre Mim
+            </h2>
+            <h3
+              class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-6 leading-tight"
+            >
+              Apaixonado por criar sites funcionais, bonitos e centrados no
+              usuário.
+            </h3>
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed"
+            >
+              Olá! Meu nome é João Gabriel, um estudante de tecnologia e
+              desenvolvimento de software. Eu já possuo o diploma de
+              <strong>Análise e Desenvolvimento de Sistemas</strong>, e estou em
+              busca de oportunidades para aplicar meus conhecimentos e evoluir
+              profissionalmente na área de TI.
+            </p>
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              No momento estou fazendo cursos à parte para aprender mais e
+              enriquecer meu conhecimento sobre a área e aprender novas
+              tecnologias e linguagens. Meu foco é na qualidade do código e na
+              criação de experiências digitais que agreguem valor real.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section (What I Do) -->
+      <section
+        class="py-24 bg-slate-100/50 dark:bg-slate-900/50 reveal"
+        id="services"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-16 reveal">
+            <h2
+              class="text-primary font-bold tracking-widest uppercase text-sm mb-4"
+            >
+              O Que Eu Faço
+            </h2>
+            <h3
+              class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white"
+            >
+              Serviços Oferecidos
+            </h3>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal-stagger">
+            <!-- Web Development -->
+            <div
+              class="p-8 rounded-2xl bg-white/5 dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200/50 dark:border-white/10 hover:border-primary/50 transition-all duration-300 group card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Desenvolvimento Web</h4>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed"
+              >
+                Criação de sites responsivos e rápidos utilizando as tecnologias
+                mais recentes.
+              </p>
+            </div>
+            <!-- SEO Optimization -->
+            <div
+              class="p-8 rounded-2xl bg-white/5 dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200/50 dark:border-white/10 hover:border-primary/50 transition-all duration-300 group card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined">trending_up</span>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Otimização SEO</h4>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed"
+              >
+                Estratégias para melhorar sua visibilidade nos motores de busca
+                e atrair tráfego orgânico.
+              </p>
+            </div>
+            <!-- English Skills -->
+            <div
+              class="p-8 rounded-2xl bg-white/5 dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200/50 dark:border-white/10 hover:border-primary/50 transition-all duration-300 group card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined">language</span>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Inglês Fluente</h4>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed"
+              >
+                Fluência completa em fala, escrita e leitura para comunicação
+                global.
+              </p>
+            </div>
+            <!-- Digital Marketing -->
+            <div
+              class="p-8 rounded-2xl bg-white/5 dark:bg-white/[0.03] backdrop-blur-xl border border-slate-200/50 dark:border-white/10 hover:border-primary/50 transition-all duration-300 group card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined">campaign</span>
+              </div>
+              <h4 class="text-xl font-bold mb-3">
+                Automação com Python e JavaScript
+              </h4>
+              <p
+                class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed"
+              >
+                Scripts e ferramentas personalizadas para otimizar processos e
+                automação de tarefas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Work Section -->
+      <section class="py-24 reveal" id="work">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal"
+          >
+            <div>
+              <div>
+                <h2
+                  class="text-primary font-bold tracking-[0.3em] uppercase text-xs mb-4"
+                >
+                  Portfólio
+                </h2>
+                <h3
+                  class="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white mb-2"
+                >
+                  Trabalhos em Destaque
+                </h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm">
+                  Uma seleção de projetos recentes desenvolvidos com foco em
+                  qualidade.
+                </p>
+              </div>
+            </div>
+            <a
+              class="text-primary font-bold flex items-center gap-2 hover:underline"
+              href="https://github.com/paralyzerxz"
+              target="_blank"
+            >
+              Ver Todos os Projetos
+              <span class="material-symbols-outlined">open_in_new</span>
+            </a>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-stagger"
+          >
+            <!-- Project 1 - Orbit Flow -->
+            <div class="group">
+              <a
+                href="https://github.com/paralyzerxz/OrbitFlow"
+                target="_blank"
+                class="block card-neon p-6 rounded-[2rem] bg-white/5 dark:bg-slate-900/50 transition-all"
+              >
+                <div
+                  class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6"
+                >
+                  <img
+                    alt="Orbit Flow"
+                    class="w-full h-full object-cover transition-transform duration-500"
+                    src="img_orbit_flow.jpg"
+                  />
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-2 text-slate-900 dark:text-white flex items-center gap-2"
+                >
+                  Orbit Flow
+                  <span
+                    class="material-symbols-outlined text-primary text-base opacity-0 group-hover:opacity-100 transition-opacity"
+                    >open_in_new</span
+                  >
+                </h4>
+                <p class="text-slate-500">
+                  Sistema de gerenciamento de fluxo e produtividade
+                </p>
+              </a>
+            </div>
+
+            <!-- Project 2 - JS Dynamic Site -->
+            <div class="group">
+              <a
+                href="https://github.com/paralyzerxz/JS-Dynamic-Site"
+                target="_blank"
+                class="block card-neon p-6 rounded-[2rem] bg-white/5 dark:bg-slate-900/50 transition-all"
+              >
+                <div
+                  class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6"
+                >
+                  <img
+                    alt="JS Dynamic Site"
+                    class="w-full h-full object-cover transition-transform duration-500"
+                    src="img_js_dynamic.jpg"
+                  />
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-2 text-slate-900 dark:text-white flex items-center gap-2"
+                >
+                  JS Dynamic Site
+                  <span
+                    class="material-symbols-outlined text-primary text-base opacity-0 group-hover:opacity-100 transition-opacity"
+                    >open_in_new</span
+                  >
+                </h4>
+                <p class="text-slate-500">
+                  Site interativo focado em manipulação de DOM e lógica
+                  JavaScript
+                </p>
+              </a>
+            </div>
+
+            <!-- Project 3 - AI Customer Helper -->
+            <div class="group">
+              <a
+                href="https://github.com/paralyzerxz/meu_projeto"
+                target="_blank"
+                class="block card-neon p-6 rounded-[2rem] bg-white/5 dark:bg-slate-900/50 transition-all"
+              >
+                <div
+                  class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6"
+                >
+                  <img
+                    alt="AI Customer Helper"
+                    class="w-full h-full object-cover transition-transform duration-500"
+                    src="img_ai_helper.jpg"
+                  />
+                </div>
+                <h4
+                  class="text-2xl font-bold mb-2 text-slate-900 dark:text-white flex items-center gap-2"
+                >
+                  AI Customer Helper
+                  <span
+                    class="material-symbols-outlined text-primary text-base opacity-0 group-hover:opacity-100 transition-opacity"
+                    >open_in_new</span
+                  >
+                </h4>
+                <p class="text-slate-500">
+                  Chatbot inteligente para suporte automatizado ao cliente
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        class="py-24 bg-slate-100/50 dark:bg-slate-900/50 reveal"
+        id="contact"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16 reveal">
+            <h2
+              class="text-primary font-bold tracking-widest uppercase text-sm mb-4"
+            >
+              Contato
+            </h2>
+            <h3
+              class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white mb-6"
+            >
+              Vamos Conversar?
+            </h3>
+            <p
+              class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl mx-auto"
+            >
+              Estou sempre aberto a novas oportunidades e parcerias. Sinta-se à
+              vontade para entrar em contato através de qualquer um dos canais
+              abaixo.
+            </p>
+          </div>
+
+          <div class="max-w-2xl mx-auto space-y-4 reveal-stagger">
+            <!-- Email -->
+            <a
+              href="mailto:joaogabriel.aveiro@gmail.com"
+              class="flex items-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all group backdrop-blur-sm card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mr-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-2xl">mail</span>
+              </div>
+              <div class="flex-1">
+                <h4
+                  class="text-[10px] font-bold text-slate-500 dark:text-slate-500 uppercase tracking-[0.2em] mb-1"
+                >
+                  Email
+                </h4>
+                <p
+                  class="text-lg font-bold text-slate-900 dark:text-white leading-none"
+                >
+                  joaogabriel.aveiro@gmail.com
+                </p>
+              </div>
+              <div
+                class="text-slate-300 dark:text-slate-700 group-hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined">east</span>
+              </div>
+            </a>
+
+            <!-- Telefone -->
+            <a
+              href="tel:+5534984229863"
+              class="flex items-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all group backdrop-blur-sm card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mr-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-2xl">call</span>
+              </div>
+              <div class="flex-1">
+                <h4
+                  class="text-[10px] font-bold text-slate-500 dark:text-slate-500 uppercase tracking-[0.2em] mb-1"
+                >
+                  Telefone
+                </h4>
+                <p
+                  class="text-lg font-bold text-slate-900 dark:text-white leading-none"
+                >
+                  (34) 98422-9863
+                </p>
+              </div>
+              <div
+                class="text-slate-300 dark:text-slate-700 group-hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined">east</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/joão-aveiro-a67342237/"
+              target="_blank"
+              class="flex items-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all group backdrop-blur-sm card-neon"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mr-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-2xl">link</span>
+              </div>
+              <div class="flex-1">
+                <h4
+                  class="text-[10px] font-bold text-slate-500 dark:text-slate-500 uppercase tracking-[0.2em] mb-1"
+                >
+                  Linkedin
+                </h4>
+                <p
+                  class="text-lg font-bold text-slate-900 dark:text-white leading-none"
+                >
+                  João Gabriel Silva Aveiro
+                </p>
+              </div>
+              <div
+                class="text-slate-300 dark:text-slate-700 group-hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >open_in_new</span
+                >
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/paralyzerxz"
+              target="_blank"
+              class="flex items-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all group backdrop-blur-sm"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mr-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-2xl">public</span>
+              </div>
+              <div class="flex-1">
+                <h4
+                  class="text-[10px] font-bold text-slate-500 dark:text-slate-500 uppercase tracking-[0.2em] mb-1"
+                >
+                  GitHub
+                </h4>
+                <p
+                  class="text-lg font-bold text-slate-900 dark:text-white leading-none"
+                >
+                  paralyzerxz
+                </p>
+              </div>
+              <div
+                class="text-slate-300 dark:text-slate-700 group-hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >open_in_new</span
+                >
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/deliaveiro_dlvr"
+              target="_blank"
+              class="flex items-center p-6 rounded-2xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all group backdrop-blur-sm"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mr-6 group-hover:scale-110 transition-transform"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >photo_camera</span
+                >
+              </div>
+              <div class="flex-1">
+                <h4
+                  class="text-[10px] font-bold text-slate-500 dark:text-slate-500 uppercase tracking-[0.2em] mb-1"
+                >
+                  Instagram
+                </h4>
+                <p
+                  class="text-lg font-bold text-slate-900 dark:text-white leading-none"
+                >
+                  @deliaveiro_dlvr
+                </p>
+              </div>
+              <div
+                class="text-slate-300 dark:text-slate-700 group-hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined text-2xl"
+                  >open_in_new</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <div class="flex items-center gap-2">
+            <span
+              class="text-lg font-bold tracking-tight text-slate-900 dark:text-white"
+              >João Gabriel</span
+            >
+          </div>
+          <p class="text-slate-500 text-sm">
+            © 2026 João Gabriel Silva Aveiro. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom Cursor Construction -->
+    <div id="cursor-container">
+      <div id="cursor-arrow">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4 4L11 20L13 13L20 11L4 4Z"
+            stroke="#00f2ff"
+            stroke-width="2"
+            stroke-linejoin="round"
+            fill="rgba(0, 242, 255, 0.1)"
+          />
+        </svg>
+      </div>
+      <div id="click-effects"></div>
+    </div>
+  </body>
+</html>
